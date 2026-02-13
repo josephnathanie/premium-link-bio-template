@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Link Portfolio</title>
+    <style>
+        /* CSS Variables: This makes it easy for a buyer to customize colors in 2 seconds */
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --glass-bg: rgba(255, 255, 255, 0.15);
+            --text-color: #ffffff;
+            --accent-color: #00d2ff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+            margin-bottom: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 { font-size: 1.5rem; margin-bottom: 5px; }
+        p { opacity: 0.8; margin-bottom: 30px; font-weight: 300; }
+
+        .links-gap {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* Safari support */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 18px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.25);
+            border-color: var(--accent-color);
+        }
+
+        /* Footer for Credits - useful if you offer this for free but want traffic */
+        footer { margin-top: 40px; font-size: 0.8rem; opacity: 0.5; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
+        <h1>@YourBrand</h1>
+        <p>Creating digital solutions for 2026</p>
+
+        <div class="links-gap">
+            <a href="#" class="link-card">🚀 Portfolio Website</a>
+            <a href="#" class="link-card">📸 Follow on Instagram</a>
+            <a href="#" class="link-card">☕ Buy Me a Coffee</a>
+            <a href="#" class="link-card">📩 Contact Me</a>
+        </div>
+
+        <footer>Template by YourName</footer>
+    </div>
+
+</body>
+</html>
